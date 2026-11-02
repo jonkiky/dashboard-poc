@@ -1,0 +1,23 @@
+{
+  "$schema": "https://schemas.example.invalid/server.schema.json",
+  "name": "invalid.example.demo/mcp-labfiles",
+  "title": "Lab Workspace File Index",
+  "description": "Metadata-only internal laboratory workspace listing. Synthetic demonstration package; no real service is deployed.",
+  "version": "0.1.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://labfiles.internal.example.invalid/mcp"
+    }
+  ],
+  "_meta": {
+    "invalid.example.demo": {
+      "simulationOnly": true,
+      "dataClass": "Internal",
+      "allowedActions": [
+        "read:file-metadata"
+      ],
+      "notice": "Illustrative metadata, not NIH policy or a working integration."
+    }
+  }
+}
